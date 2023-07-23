@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>register</title>
+    <style type="text/css">
+        body {
+            background-color: #F5F5F5;
+        }
+        .container {
+            width: 500px;
+            padding-top: 100px;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .container form {
+            width: 100%;
+        }
+        .container form .info {
+            height: 50px;
+            margin-bottom: 10px;
+            border: 1px solid #D5D5D5;
+            padding-left: 10px;
+        }
+        .check {
+            margin-bottom: 10px;
+            color: red;
+        }
+        .radio {
+            margin-bottom: 10px;
+            color: blue;
+        }
+        .info {
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: #666666;
+            font-size: 12px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>회원가입</h1>
+        <form method="post">
+            <input class="info" type="text" name="name" placeholder="이름을 입력하세요.">
+            <input class="info" type="text" name="email" placeholder="이메일을 입력하세요.">
+            <input class="info" type="password" name="password" placeholder="비밀번호를 입력하세요.">
+            <input class="info" type="password" name="password_check" placeholder="비밀번호를 한번 더 입력하세요.">
+            <p>좋아하는 음식을 선택하세요.</p>
+            <div class="check">
+                <input type="checkbox" name="food" id="apple">
+                <label for="apple">사과</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="food" id="banana">
+                <label for="banana">바나나</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="food" id="melon">
+                <label for="melon">멜론</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="food" id="strawberry">
+                <label for="strawberry">딸기</label>
+            </div>
+            <p>학력을 선택하세요.</p>
+            <div class="radio">
+                <input type="radio" name="education" id="elementary">
+                <label for="elementary">초등학교</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="education" id="middle">
+                <label for="middle">중학교</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="education" id="high">
+                <label for="high">고등학교</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="education" id="university">
+                <label for="university">대학교</label>
+            </div>
+            <div class="radio">
+                <label for="graduate">대학원</label>
+                <input type="radio" name="education" id="graduate">
+            </div>
+            <div class="radio">
+                <input type="radio" name="education" id="etc">
+                <label for="etc">기타</label>
+            </div>
+            <input type="submit" value="회원가입">
+        </form>
+        <p><a href="login.html">로그인</a></p>
+    </div>
